@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import org.ei.drishti.common.util.HttpAgent;
 import org.ei.drishti.common.util.HttpResponse;
 import org.ei.drishti.domain.DrishtiUser;
-import org.ei.drishti.dto.VillagesDTO;
+import org.ei.drishti.dto.VillagesDTOTest;
 import org.ei.drishti.service.ANMDetailsService;
 import org.junit.Before;
 import org.junit.Test;
@@ -40,14 +40,14 @@ public class ANMLocationControllerTest {
 
         when(httpAgent.get("http://dristhi_reporting_url/villages?anm-id=demo1")).
                 thenReturn(new HttpResponse(true,
-                        new Gson().toJson(new VillagesDTO("district", "PHC X", "phc1", "Sub Center 1", asList("village1", "village2", "village3")))));
+                        new Gson().toJson(new VillagesDTOTest("district", "PHC X", "phc1", "Sub Center 1", asList("village1", "village2", "village3")))));
         when(userController.currentUser()).thenReturn(user);
         when(user.getUsername()).thenReturn("demo1");
         when(user.getRoles()).thenReturn(asList("User"));
 
-        ResponseEntity<VillagesDTO> response = controller.villagesForANM();
+        ResponseEntity<VillagesDTOTest> response = controller.villagesForANM();
 
-        assertEquals(new VillagesDTO("district", "PHC X", "phc1", "Sub Center 1", asList("village1", "village2", "village3")), response.getBody());
+        assertEquals(new VillagesDTOTest("district", "PHC X", "phc1", "Sub Center 1", asList("village1", "village2", "village3")), response.getBody());
         assertEquals(HttpStatus.OK, response.getStatusCode());
     }
 }

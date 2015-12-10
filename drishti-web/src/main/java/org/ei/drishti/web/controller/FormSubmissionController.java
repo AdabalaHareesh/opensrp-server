@@ -16,7 +16,7 @@ import org.ei.drishti.common.util.HttpAgent;
 import org.ei.drishti.common.util.HttpResponse;
 import org.ei.drishti.domain.Multimedia;
 import org.ei.drishti.dto.ANMVillagesDTO;
-import org.ei.drishti.dto.VillagesDTO;
+import org.ei.drishti.dto.VillagesDTOTest;
 import org.ei.drishti.dto.form.FormSubmissionDTO;
 import org.ei.drishti.dto.form.MultimediaDTO;
 import org.ei.drishti.event.FormSubmissionEvent;

@@ -1,7 +1,7 @@
 package org.ei.drishti.reporting.controller;
 
 import org.ei.drishti.dto.ANMVillagesDTO;
-import org.ei.drishti.dto.VillagesDTO;
+import org.ei.drishti.dto.VillagesDTOTest;
 import org.ei.drishti.reporting.domain.ANMVillages;
 import org.ei.drishti.reporting.domain.Location;
 import org.ei.drishti.reporting.domain.PHC;
@@ -49,9 +49,9 @@ public class LocationControllerTest {
         when(phc.name()).thenReturn("PHC X");
         when(location.phcName()).thenReturn("PHC X");
 
-        ResponseEntity<VillagesDTO> response = controller.villagesForANM("demo1");
+        ResponseEntity<VillagesDTOTest> response = controller.villagesForANM("demo1");
 
-        VillagesDTO villagesDTO = new VillagesDTO("district", "PHC X", "phc1", "sc", asList("village1", "village2"));
+        VillagesDTOTest villagesDTO = new VillagesDTOTest("district", "PHC X", "phc1", "sc", asList("village1", "village2"));
         assertEquals(villagesDTO, response.getBody());
     }
     

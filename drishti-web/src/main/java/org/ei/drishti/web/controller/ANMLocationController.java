@@ -5,7 +5,7 @@ import com.google.gson.reflect.TypeToken;
 import org.apache.commons.lang.exception.ExceptionUtils;
 import org.ei.drishti.common.util.HttpAgent;
 import org.ei.drishti.common.util.HttpResponse;
-import org.ei.drishti.dto.VillagesDTO;
+import org.ei.drishti.dto.VillagesDTOTest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,13 +39,13 @@ public class ANMLocationController {
 
     @RequestMapping(method = GET, value = "/anm-villages")
     @ResponseBody
-    public ResponseEntity<VillagesDTO> villagesForANM() {
+    public ResponseEntity<VillagesDTOTest> villagesForANM() {
         HttpResponse response = new HttpResponse(false, null);
         try {
             String anmIdentifier = userController.currentUser().getUsername();
             response = httpAgent.get(drishtiANMVillagesURL + "?anm-id=" + anmIdentifier);
-            VillagesDTO villagesDTOs = new Gson().fromJson(response.body(),
-                    new TypeToken<VillagesDTO>() {
+            VillagesDTOTest villagesDTOs = new Gson().fromJson(response.body(),
+                    new TypeToken<VillagesDTOTest>() {
                     }.getType());
             logger.info("Fetched Villages for the ANM");
             return new ResponseEntity<>(villagesDTOs, HttpStatus.OK);

@@ -1,6 +1,6 @@
 package org.ei.drishti.reporting.controller;
 
-import org.ei.drishti.dto.VillagesDTO;
+import org.ei.drishti.dto.VillagesDTOTest;
 import org.ei.drishti.dto.ANMVillagesDTO;
 import org.ei.drishti.reporting.domain.ANMVillages;
 import org.ei.drishti.reporting.domain.Location;
@@ -31,13 +31,13 @@ public class LocationController {
     }
 
     @RequestMapping(method = {RequestMethod.GET, RequestMethod.OPTIONS}, value = "/villages")
-    public ResponseEntity<VillagesDTO> villagesForANM(@RequestParam("anm-id") String anmIdentifier) {
+    public ResponseEntity<VillagesDTOTest> villagesForANM(@RequestParam("anm-id") String anmIdentifier) {
         List villagesForANM = anmService.getVillagesForANM(anmIdentifier);
-        VillagesDTO villagesDTO = null;
+        VillagesDTOTest villagesDTO = null;
         if (villagesForANM != null) {
             Location anmLocation = (Location) villagesForANM.get(0);
             List<String> villages = collect(villagesForANM, on(Location.class).village());
-            villagesDTO = new VillagesDTO(anmLocation.district().toLowerCase(),
+            villagesDTO = new VillagesDTOTest(anmLocation.district().toLowerCase(),
                     anmLocation.phcName(),
                     anmLocation.phc().phcIdentifier(),
                     anmLocation.subCenter(),

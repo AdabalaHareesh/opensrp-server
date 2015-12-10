@@ -7,7 +7,7 @@ import static org.mockito.MockitoAnnotations.initMocks;
 
 import org.ei.drishti.common.util.HttpAgent;
 import org.ei.drishti.common.util.HttpResponse;
-import org.ei.drishti.dto.VillagesDTO;
+import org.ei.drishti.dto.VillagesDTOTest;
 import org.ei.drishti.dto.form.FormSubmissionDTO;
 import org.ei.drishti.reporting.domain.ANMVillages;
 import org.ei.drishti.reporting.domain.Location;
