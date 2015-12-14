@@ -43,7 +43,7 @@ Follow the steps below for the Installation of each Component for Linux
 	
     $ sudo apt-get install g++
     $ sudo apt-get install erlang-base erlang-dev erlang-eunit erlang-nox
-		$ sudo apt-get install libmozjs185-dev libicu-dev libcurl4-gnutls-dev libtool
+    $ sudo apt-get install libmozjs185-dev libicu-dev libcurl4-gnutls-dev libtool
  
 	Then go to CouchDB site and choose to download from sources. After download CouchDB, extract it to your preferred folder.
 	In a terminal, go to the folder where you extract your CouchDB and run the following command
@@ -106,7 +106,8 @@ Follow the steps below for the Installation of each Component for Linux
 6) Install Maven 2 or above
 
 	sudo apt-get install maven
-	Run mvn clean install from the root directory of opensrp-server
+	Run mvn clean install  
+	from the root directory of opensrp-server
 
 7) Install apache-tomcat server or jetty server
 
@@ -115,4 +116,7 @@ Follow the steps below for the Installation of each Component for Linux
    	   Navigate to opensrp-server/drishti-reporting directory and run mvn jetty:run
    	   Navigate to opensrp-server/drishti-web directory and run mvn jetty:run
 
+8) To run tests
+
+	mvn test
 

@@ -1,4 +1,8 @@
 package org.ei.drishti.common.domain;
+import static org.junit.Assert.assertEquals;
+
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,34 +16,39 @@ public class MonthSummaryTest {
 
 @Test
 public void monthtest() throws Exception {
-	 
-	monthSummary.month();
+	String m= monthSummary.month();
+	String a=null;
+	assertEquals(m,a);
 }
 
 @Test
 public void yeartest() throws Exception {
-	 
-	monthSummary.year();
+	String m= monthSummary.year();
+	String a=null;
+	assertEquals(m,a);
 }
 
 @Test
 public void currentProgresstest() throws Exception {
-	 
-	monthSummary.currentProgress();
+	String m= monthSummary.currentProgress();
+	String a=null;
+	assertEquals(m,a);
 }
 
 
 @Test
 public void aggregatedProgresstest() throws Exception {
-	 
-	monthSummary.aggregatedProgress();
+	String m= monthSummary.aggregatedProgress();
+	String a=null;
+	assertEquals(m,a);
 }
 
 
 @Test
 public void externalIDstest() throws Exception {
-	 
-	monthSummary.externalIDs();
+	List<String> m= monthSummary.externalIDs();
+	String a=null;
+	assertEquals(m,a);
 }
 
 }

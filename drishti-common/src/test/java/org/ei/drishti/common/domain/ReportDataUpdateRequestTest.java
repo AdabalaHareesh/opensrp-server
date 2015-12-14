@@ -1,5 +1,7 @@
 package org.ei.drishti.common.domain;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.List;
 
 import org.junit.Before;
@@ -13,56 +15,43 @@ public class ReportDataUpdateRequestTest {
 	public void setUp(){
 		reportDataUpdateRequest = new ReportDataUpdateRequest();
 	}
-	
+		
 	@Test
 	public void indicatorTest(){
-		reportDataUpdateRequest.indicator();		
+		ReportDataUpdateRequest c = reportDataUpdateRequest.withIndicator("indicator");
+		String s = c.indicator();
+		assertEquals(s,"indicator");
 	}
 	
 	@Test
 	public void startDateTest(){
-		reportDataUpdateRequest.startDate();	
+		ReportDataUpdateRequest c = reportDataUpdateRequest.withStartDate("startDate");
+		String s = c.startDate();
+		assertEquals(s,"startDate");
 	}
 	
 	@Test
 	public void endDateTest(){
-		reportDataUpdateRequest.endDate();	
+		ReportDataUpdateRequest c = reportDataUpdateRequest.withEndDate("endDate");
+		String s = c.endDate();
+		assertEquals(s,"endDate");
 	}
 	
 	@Test
 	public void typeTest(){
-		reportDataUpdateRequest.type();
+		ReportDataUpdateRequest c = reportDataUpdateRequest.withType("type");
+		String s = c.type();
+		assertEquals(s,"type");
 	}
 	
 	@Test
 	public void reportingDataTest(){
 		reportDataUpdateRequest.reportingData();
 	}
-	
-	@Test
-	public void withIndicatorTest(){
-		reportDataUpdateRequest.withIndicator("indicator");
-	}
-	
-	@Test
-	public void withStartDateTest(){
-		reportDataUpdateRequest.withStartDate("startDate");
-	}
-	
-	@Test
-	public void withTypeTest(){
-		reportDataUpdateRequest.withType("type");
-	}
-	
-	@Test
-	public void withEndDateTest(){
-		reportDataUpdateRequest.withEndDate("endDate");
-	}
-	
+		
 	@Test
 	public void withReportingDataTest(){
 		List<ReportingData> reportingData = null;
 		reportDataUpdateRequest.withReportingData(reportingData);
 	}
-	
 }
