@@ -1,6 +1,6 @@
 # opensrp-server
 
-<a href="https://travis-ci.org/OpenSRP/opensrp-server"> <img src="https://travis-ci.org/OpenSRP/opensrp-server.svg?branch=master" >  </img> </a>
+<a href="https://travis-ci.org/AdabalaHareesh/opensrp-server"> <img src="https://travis-ci.org/AdabalaHareesh/opensrp-server.svg?branch=doctor-plugin-test" >  </img> </a>
 
 
 <b>For a full server build one needs to configure the environment with technology components/programs to install OpenSRP.</b>
