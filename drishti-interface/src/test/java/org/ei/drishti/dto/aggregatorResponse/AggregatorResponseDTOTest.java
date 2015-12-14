@@ -1,4 +1,6 @@
 package org.ei.drishti.dto.aggregatorResponse;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 public class AggregatorResponseDTOTest {
@@ -11,11 +13,15 @@ public class AggregatorResponseDTOTest {
 	}
 	@Test
 	public void indicatorTest(){
-		aggregatorres.indicator();
+		String w= aggregatorres.indicator();
+		String a=null;
+		assertEquals(w,a);
     }
 	@Test
 	public void countTest(){
-		aggregatorres.count();
+		Integer w= aggregatorres.count();
+		String a=null;
+		assertEquals(w,a);
 	}
 	
 }

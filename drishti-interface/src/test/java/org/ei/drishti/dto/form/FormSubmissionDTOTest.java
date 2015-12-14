@@ -1,4 +1,6 @@
 package org.ei.drishti.dto.form;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 public class FormSubmissionDTOTest {
@@ -11,34 +13,50 @@ public class FormSubmissionDTOTest {
 	}
 	@Test
 	public void anmIdTest(){
-		formsubmission.anmId();
+		String w= formsubmission.anmId();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void instanceIdTest(){
-		formsubmission.instanceId();
+		String w= formsubmission.instanceId();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void entityIdTest(){
-		formsubmission.entityId();
+		String w= formsubmission.entityId();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void formNameTest(){
-		formsubmission.formName();
+		String w= formsubmission.formName();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
-	public void instance(){
-		formsubmission.instance();
+	public void instanceTest(){
+		String w= formsubmission.instance();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
-	public void clientVersion(){
-		formsubmission.clientVersion();
+	public void clientVersionTest(){
+		String w= formsubmission.clientVersion();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
-	public void formDataDefinitionVersion(){
-		formsubmission.formDataDefinitionVersion();
-		}
+	public void formDataDefinitionVersionTest(){
+		String w= formsubmission.formDataDefinitionVersion();
+		String a=null;
+		assertEquals(w,a);
+	}
 	@Test
 	public void serverVersion(){
-		formsubmission. serverVersion();
+		String w= formsubmission.serverVersion();
+		String a=null;
+		assertEquals(w,a);
 	}
 }

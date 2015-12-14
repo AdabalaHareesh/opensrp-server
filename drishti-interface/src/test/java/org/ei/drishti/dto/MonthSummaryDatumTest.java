@@ -1,4 +1,8 @@
 package org.ei.drishti.dto;
+import static org.junit.Assert.assertEquals;
+
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 public class MonthSummaryDatumTest {
@@ -11,23 +15,33 @@ public class MonthSummaryDatumTest {
 	}
 	@Test
 	public void monthTest(){
-		monthsummary.month();
+		String w= monthsummary.month();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void yearTest(){
-		monthsummary.year();
+		String w= monthsummary.year();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void currentprogressTest(){
-		monthsummary.currentProgress();
+		String w= monthsummary.currentProgress();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void aggregatedProgressTest(){
-		monthsummary.aggregatedProgress();
+		String w= monthsummary.aggregatedProgress();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void externalIDsTest(){
-		monthsummary.externalIDs();
+		List<String> w= monthsummary.externalIDs();
+		String a=null;
+		assertEquals(w,a);
 	}
 	
 }

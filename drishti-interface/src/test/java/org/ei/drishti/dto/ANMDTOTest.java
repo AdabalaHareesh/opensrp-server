@@ -1,4 +1,6 @@
 package org.ei.drishti.dto;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 public class ANMDTOTest {
@@ -11,14 +13,20 @@ public class ANMDTOTest {
 	}
 	@Test
 	public void identifierTest(){
-		anmdto.identifier();
+		String w= anmdto.identifier();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void nameTest(){
-		anmdto.name();
+		String w= anmdto.name();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
-	public void location(){
-		anmdto.location();
+	public void locationTest(){
+		LocationDTO w= anmdto.location();
+		String a=null;
+		assertEquals(w,a);
 	}
 }

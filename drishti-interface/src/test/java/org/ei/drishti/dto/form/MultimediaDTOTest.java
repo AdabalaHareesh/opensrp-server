@@ -1,4 +1,6 @@
 package org.ei.drishti.dto.form;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 public class MultimediaDTOTest {
@@ -11,22 +13,32 @@ public class MultimediaDTOTest {
 	}
 	@Test
 	public void caseIdTest(){
-		multimedia.caseId();
+		String w= multimedia.caseId();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void  providerIdTest(){
-		multimedia.providerId();
+		String w= multimedia.providerId();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void contentTypeTest(){
-		multimedia.contentType();
+		String w= multimedia.contentType();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void filePathTest(){
-		multimedia.filePath();
+		String w= multimedia.filePath();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
-	public void fileCategory(){
-		multimedia.fileCategory();
+	public void fileCategoryTest(){
+		String w= multimedia.fileCategory();
+		String a=null;
+		assertEquals(w,a);
 	}
 }

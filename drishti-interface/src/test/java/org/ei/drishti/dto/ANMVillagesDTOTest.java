@@ -1,4 +1,6 @@
 package org.ei.drishti.dto;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 public class ANMVillagesDTOTest {
@@ -11,15 +13,21 @@ public class ANMVillagesDTOTest {
 	}
 	@Test
 	public void userroleTest(){
-		anmvillagesdto.userrole();
+		String w= anmvillagesdto.userrole();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void user_idTest(){
-		anmvillagesdto.user_id();
+		String w= anmvillagesdto.user_id();
+		String a=null;
+		assertEquals(w,a);
 		
 	}
 	@Test
 	public void villagesTest(){
-		anmvillagesdto.villages();
+		String w= anmvillagesdto.villages();
+		String a=null;
+		assertEquals(w,a);
 	}
 }

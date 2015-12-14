@@ -1,5 +1,9 @@
 package org.ei.drishti.dto;
 
+import static org.junit.Assert.assertEquals;
+
+import java.util.Map;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,31 +17,45 @@ public class ActionTest {
 	 }
 	@Test
 	public void caseIDTest(){
-		action.caseID();
+		String w= action.caseID();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void targetTest(){
-		action.target();
+		String w= action.target();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void typeTest(){
-		action.type();
+		String w= action.type();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void isActionActiveTest(){
-		action.isActionActive();
+		Boolean w= action.isActionActive();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void indexTest(){
-		action.index();
+		String w= action.index();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void detailsTest(){
-		action.details();
+		Map<String, String> w= action.details();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void dataTest(){
-		action.data();
+		Map<String, String> w= action.data();
+		String a=null;
+		assertEquals(w,a);
 	}
 	
 }

@@ -1,4 +1,8 @@
 package org.ei.drishti.dto;
+import static org.junit.Assert.assertEquals;
+
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.Test;
 public class VillagesDTOTest {
@@ -11,18 +15,26 @@ public class VillagesDTOTest {
 	} 
 	@Test
 	public void phcNameTest(){
-		villagesdto.phcName();
+		String w= villagesdto.phcName();
+		String a=null;
+		assertEquals(w,a);
 	}
 	@Test
 	public void subCenterTest(){
-		villagesdto.subCenter();
+		String w= villagesdto.subCenter();
+		String a=null;
+		assertEquals(w,a);
 		}
 	@Test
 	public void villagesTest(){
-		villagesdto.villages();
+		List<String> w= villagesdto.villages();
+		String a=null;
+		assertEquals(w,a);
 		}
 	@Test
-	public void phcIdentifier(){
-		villagesdto.phcIdentifier();
+	public void phcIdentifierTest(){
+		String w= villagesdto.phcIdentifier();
+		String a=null;
+		assertEquals(w,a);
 	}
 }
